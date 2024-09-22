@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel del Estudiante</title>
+</head>
+<body>
+  <h1>Bienvenido, Estudiante</h1>
+  <p>Aquí puedes ver y subir tus actividades.</p>
+  
+  <h2>Actividades disponibles:</h2>
+  <ul>
+    <li>Tarea 1 - Fecha límite: 25 de septiembre</li>
+    <li>Tarea 2 - Fecha límite: 30 de septiembre</li>
+  </ul>
+
+  <form action="upload_activity.php" method="POST" enctype="multipart/form-data">
+    <label for="activity">Subir Actividad:</label>
+    <input type="file" id="activity" name="activity" required>
+    <button type="submit">Subir</button>
+  </form>
+</body>
+</html>
